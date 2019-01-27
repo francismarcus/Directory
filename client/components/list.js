@@ -10,7 +10,7 @@ const List = props => {
   return (
     <div>
       <div className="list" />
-        {props.Info.map(Info => <Details />)}
+        {props.Info.map(Info => <Details key={Info._id} Info={ Info } />)}
     </div>
   );
 };
