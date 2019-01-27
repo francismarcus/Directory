@@ -13,6 +13,7 @@
     "lodash": "^4.17.11",
     "meteor-node-stubs": "^0.4.1",
     "react": "^16.7.0",
+    "react-addons-pure-render-mixin": "^15.6.2",
     "react-dom": "^16.7.0",
     "save": "^2.3.3"
   },

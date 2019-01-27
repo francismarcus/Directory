@@ -9,6 +9,7 @@ Meteor.startup(() => {
   if (!numberRecords) {
     // var times = 20;
     // for (var i = 0; 1 < times; i++) {
+
     _.times(20, () => {
       const { name, email, phone, address } = helpers.createCard();
       Info.insert({
@@ -20,7 +21,6 @@ Meteor.startup(() => {
       });
     });
   }
-  console.log(numberRecords);
 
   // Limit meteor publications,TODO: add load more.
   Meteor.publish("Info", function() {
