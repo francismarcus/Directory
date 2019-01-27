@@ -3,14 +3,14 @@ import React from "react";
 import { createContainer } from "meteor/react-meteor-data";
 import { Info } from "../../imports/collections/collection";
 
-const List = (props) => {
-    console.log(props.Info)
+import Details from "./details";
+
+const List = props => {
 
   return (
     <div>
       <div className="list" />
-
-      <p> List </p>
+        {props.Info.map(Info => <Details />)}
     </div>
   );
 };
