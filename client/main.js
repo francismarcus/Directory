@@ -4,10 +4,12 @@ import ReactDOM from "react-dom";
 
 import "./main.html";
 
+import List from "./components/list";
+
 const App = () => {
   return (
     <div>
-      <h1> Hello World! </h1>
+      <List />
     </div>
   );
 };
